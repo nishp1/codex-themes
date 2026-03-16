@@ -1,0 +1,65 @@
+name: CodexThemesShowcase
+options:
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    CODE_SIGNING_ALLOWED: NO
+packages:
+  CodexThemesKit:
+    path: ../CodexThemesKit
+targets:
+  CodexThemesShowcase-iOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - Sources/Shared
+    dependencies:
+      - package: CodexThemesKit
+        product: CodexThemesKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.nish.CodexThemesShowcase.ios
+        PRODUCT_NAME: CodexThemesShowcase
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Codex Themes
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+  CodexThemesShowcase-macOS:
+    type: application
+    platform: macOS
+    deploymentTarget: "26.0"
+    sources:
+      - Sources/Shared
+    dependencies:
+      - package: CodexThemesKit
+        product: CodexThemesKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.nish.CodexThemesShowcase.macos
+        PRODUCT_NAME: CodexThemesShowcase
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Codex Themes
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+schemes:
+  CodexThemesShowcase-iOS:
+    build:
+      targets:
+        CodexThemesShowcase-iOS: all
+    run:
+      config: Debug
+  CodexThemesShowcase-macOS:
+    build:
+      targets:
+        CodexThemesShowcase-macOS: all
+    run:
+      config: Debug

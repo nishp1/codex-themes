@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134734F555CA4B61518A5FCF /* CodexThemesShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE9AC42E64BAF465274C03 /* CodexThemesShowcaseApp.swift */; };
+		25F9FCF5F6BE788DD4BDB9B7 /* CodexThemesShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE9AC42E64BAF465274C03 /* CodexThemesShowcaseApp.swift */; };
+		2C684B220E77579563C84F81 /* Chrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ACB093762385AF564857D /* Chrome.swift */; };
+		2F84157F4CFCA4D0885640A5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70673D51B5BC3250019450 /* RootView.swift */; };
+		458CA3A49E0D4B6C83A8A533 /* CodexThemesKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCED1EE745FBF3485699FE04 /* CodexThemesKit */; };
+		5D213621A28807BD98CC0A83 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70673D51B5BC3250019450 /* RootView.swift */; };
+		91552F25858A4277AE2F01BE /* Chrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ACB093762385AF564857D /* Chrome.swift */; };
+		A64A07DE5880FB0D2DCEAFA1 /* CodexThemesKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3EF55D36D7D58A03AEC8905F /* CodexThemesKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28DE9AC42E64BAF465274C03 /* CodexThemesShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexThemesShowcaseApp.swift; sourceTree = "<group>"; };
+		3CFD32B2EBFAC791876E7B81 /* CodexThemesShowcase-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "CodexThemesShowcase-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C083A8EB171485887756998 /* CodexThemesShowcase-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodexThemesShowcase-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2ACB093762385AF564857D /* Chrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chrome.swift; sourceTree = "<group>"; };
+		762B33C64613AE8E45C3E36C /* CodexThemesKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CodexThemesKit; path = ../CodexThemesKit; sourceTree = SOURCE_ROOT; };
+		CA70673D51B5BC3250019450 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D93ADEBFE78622885D8993A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64A07DE5880FB0D2DCEAFA1 /* CodexThemesKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6ABAF2C5381D682B64D5CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458CA3A49E0D4B6C83A8A533 /* CodexThemesKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FBB461C5BE2FCECDD6B933B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CFD32B2EBFAC791876E7B81 /* CodexThemesShowcase-iOS.app */,
+				5C083A8EB171485887756998 /* CodexThemesShowcase-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AFD0FD132ECFBF800283AE3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				96EBFBD12A1F04C81F8C69D2 /* Shared */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		96EBFBD12A1F04C81F8C69D2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6F2ACB093762385AF564857D /* Chrome.swift */,
+				28DE9AC42E64BAF465274C03 /* CodexThemesShowcaseApp.swift */,
+				CA70673D51B5BC3250019450 /* RootView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9D52AFFF95DE4002FA40532F = {
+			isa = PBXGroup;
+			children = (
+				A43EC5838B2A214936C6B710 /* Packages */,
+				8AFD0FD132ECFBF800283AE3 /* Sources */,
+				7FBB461C5BE2FCECDD6B933B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A43EC5838B2A214936C6B710 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				762B33C64613AE8E45C3E36C /* CodexThemesKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C7F0F49C8CBDECC26F0DE26 /* CodexThemesShowcase-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BDB155B787BAF18782C5BFF /* Build configuration list for PBXNativeTarget "CodexThemesShowcase-macOS" */;
+			buildPhases = (
+				27A31E930D0683F4D317B680 /* Sources */,
+				2D93ADEBFE78622885D8993A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodexThemesShowcase-macOS";
+			packageProductDependencies = (
+				3EF55D36D7D58A03AEC8905F /* CodexThemesKit */,
+			);
+			productName = "CodexThemesShowcase-macOS";
+			productReference = 5C083A8EB171485887756998 /* CodexThemesShowcase-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E531DAAB204AF2B57BE7EF4B /* CodexThemesShowcase-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93D82744F1CA42E14643D02 /* Build configuration list for PBXNativeTarget "CodexThemesShowcase-iOS" */;
+			buildPhases = (
+				1B57BFCD4EB6C7929AB555BC /* Sources */,
+				B6ABAF2C5381D682B64D5CAA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodexThemesShowcase-iOS";
+			packageProductDependencies = (
+				DCED1EE745FBF3485699FE04 /* CodexThemesKit */,
+			);
+			productName = "CodexThemesShowcase-iOS";
+			productReference = 3CFD32B2EBFAC791876E7B81 /* CodexThemesShowcase-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C0AB750F093F1B143F91569 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 5755DB78D98E3BD898CBA9D8 /* Build configuration list for PBXProject "CodexThemesShowcase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9D52AFFF95DE4002FA40532F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7D71F1B8CF50511A67E08734 /* XCLocalSwiftPackageReference "../CodexThemesKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E531DAAB204AF2B57BE7EF4B /* CodexThemesShowcase-iOS */,
+				3C7F0F49C8CBDECC26F0DE26 /* CodexThemesShowcase-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B57BFCD4EB6C7929AB555BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C684B220E77579563C84F81 /* Chrome.swift in Sources */,
+				134734F555CA4B61518A5FCF /* CodexThemesShowcaseApp.swift in Sources */,
+				2F84157F4CFCA4D0885640A5 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A31E930D0683F4D317B680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91552F25858A4277AE2F01BE /* Chrome.swift in Sources */,
+				25F9FCF5F6BE788DD4BDB9B7 /* CodexThemesShowcaseApp.swift in Sources */,
+				5D213621A28807BD98CC0A83 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		17DFCC98E92FBB90F5CC7154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Codex Themes";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nish.CodexThemesShowcase.macos;
+				PRODUCT_NAME = CodexThemesShowcase;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4BAA95F7B0940FC5CD854663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Codex Themes";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationPortraitUpsideDown,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nish.CodexThemesShowcase.ios;
+				PRODUCT_NAME = CodexThemesShowcase;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D5B2D006B5D3A8B4855A2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		B301C970FCFABCD59425C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Codex Themes";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nish.CodexThemesShowcase.macos;
+				PRODUCT_NAME = CodexThemesShowcase;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B6704A850145ABB9E38BEA1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Codex Themes";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationPortraitUpsideDown,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nish.CodexThemesShowcase.ios;
+				PRODUCT_NAME = CodexThemesShowcase;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E799CFA9467C2529C8698D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5755DB78D98E3BD898CBA9D8 /* Build configuration list for PBXProject "CodexThemesShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E799CFA9467C2529C8698D98 /* Debug */,
+				4D5B2D006B5D3A8B4855A2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6BDB155B787BAF18782C5BFF /* Build configuration list for PBXNativeTarget "CodexThemesShowcase-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B301C970FCFABCD59425C139 /* Debug */,
+				17DFCC98E92FBB90F5CC7154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D93D82744F1CA42E14643D02 /* Build configuration list for PBXNativeTarget "CodexThemesShowcase-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6704A850145ABB9E38BEA1E /* Debug */,
+				4BAA95F7B0940FC5CD854663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7D71F1B8CF50511A67E08734 /* XCLocalSwiftPackageReference "../CodexThemesKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../CodexThemesKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3EF55D36D7D58A03AEC8905F /* CodexThemesKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CodexThemesKit;
+		};
+		DCED1EE745FBF3485699FE04 /* CodexThemesKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CodexThemesKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8C0AB750F093F1B143F91569 /* Project object */;
+}
