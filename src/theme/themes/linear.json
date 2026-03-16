@@ -1,0 +1,59 @@
+{
+  "$schema": "https://opencode.ai/desktop-theme.json",
+  "name": "Linear",
+  "id": "linear",
+  "light": {
+    "palette": {
+      "neutral": "#f7f7f8",
+      "ink": "#16181d",
+      "primary": "#5e6ad2",
+      "accent": "#5e6ad2",
+      "success": "#289f6a",
+      "warning": "#b7791f",
+      "error": "#d44c78",
+      "info": "#4f7cff",
+      "interactive": "#5e6ad2",
+      "diffAdd": "#4cbf8d",
+      "diffDelete": "#e1648f"
+    },
+    "overrides": {
+      "syntax-comment": "#70737c",
+      "syntax-keyword": "#5e6ad2",
+      "syntax-string": "#1f8f6b",
+      "syntax-primitive": "#c7653b",
+      "syntax-property": "#7c4dff",
+      "syntax-type": "#4060e8",
+      "syntax-constant": "#0f6d8c",
+      "markdown-heading": "#4b58c7",
+      "markdown-link": "#5e6ad2",
+      "markdown-code": "#1f8f6b"
+    }
+  },
+  "dark": {
+    "palette": {
+      "neutral": "#0f1012",
+      "ink": "#eceef3",
+      "primary": "#8291ff",
+      "accent": "#8f9cff",
+      "success": "#37c58a",
+      "warning": "#f3ba63",
+      "error": "#ff7aa2",
+      "info": "#7ca1ff",
+      "interactive": "#8291ff",
+      "diffAdd": "#54d39b",
+      "diffDelete": "#ff8db0"
+    },
+    "overrides": {
+      "syntax-comment": "#7d818c",
+      "syntax-keyword": "#97a4ff",
+      "syntax-string": "#49d39d",
+      "syntax-primitive": "#f3ba63",
+      "syntax-property": "#c29bff",
+      "syntax-type": "#89a8ff",
+      "syntax-constant": "#70d9ff",
+      "markdown-heading": "#aab4ff",
+      "markdown-link": "#97a4ff",
+      "markdown-code": "#49d39d"
+    }
+  }
+}

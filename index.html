@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex-Themes</title>
+    <script>
+      ;(function () {
+        var key = "codex-themes-id"
+        var theme = localStorage.getItem(key) || "linear"
+        var scheme = localStorage.getItem("codex-themes-scheme") || "system"
+        var dark = scheme === "dark" || (scheme === "system" && matchMedia("(prefers-color-scheme: dark)").matches)
+        var mode = dark ? "dark" : "light"
+        var css = localStorage.getItem("codex-themes-css-" + mode)
+        document.documentElement.dataset.theme = theme
+        document.documentElement.dataset.colorScheme = mode
+        if (!css) return
+        var style = document.createElement("style")
+        style.id = "codex-theme-preload"
+        style.textContent =
+          ":root{color-scheme:" + mode + ";--text-mix-blend-mode:" + (dark ? "plus-lighter" : "multiply") + ";" + css + "}"
+        document.head.appendChild(style)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  </html>

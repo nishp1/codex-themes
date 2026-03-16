@@ -1,0 +1,373 @@
+.settings-shell {
+  min-height: 100vh;
+  padding: 1.5rem;
+  color: var(--color-text-foreground);
+  background:
+    radial-gradient(circle at top left, color-mix(in oklab, var(--color-background-accent) 68%, transparent), transparent 24rem),
+    linear-gradient(180deg, var(--color-background-surface-under), var(--color-background-surface));
+}
+
+.hero,
+.preview-card,
+.variant-card {
+  border: 1px solid var(--color-border);
+  border-radius: 1.25rem;
+  background: color-mix(in oklab, var(--color-background-elevated-primary) 94%, transparent);
+  box-shadow: var(--shadow-elev-2);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.9fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.hero-copy,
+.scheme-card,
+.preview-card,
+.variant-card {
+  min-width: 0;
+}
+
+.scheme-card {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 1rem;
+  background: var(--color-background-control);
+}
+
+.eyebrow,
+.label,
+.toggle small,
+.muted {
+  color: var(--color-text-foreground-secondary);
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: var(--color-text-foreground);
+}
+
+.muted {
+  line-height: 1.6;
+}
+
+.seg {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.seg-btn,
+.ghost-btn,
+.pri,
+.sec,
+.ter,
+.select,
+.text {
+  min-height: 2.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-border);
+  font: inherit;
+}
+
+.seg-btn,
+.ghost-btn,
+.pri,
+.sec,
+.ter {
+  background: var(--color-background-button-secondary);
+  color: var(--color-text-foreground-secondary);
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease;
+}
+
+.seg-btn:hover,
+.ghost-btn:hover,
+.pri:hover,
+.sec:hover,
+.ter:hover {
+  border-color: var(--color-border-heavy);
+  background: var(--color-background-elevated-secondary);
+}
+
+.seg-btn.is-on {
+  color: var(--color-text-accent);
+  border-color: var(--color-border-focus);
+  background: var(--color-background-accent);
+}
+
+.seg-btn,
+.ghost-btn,
+.pri,
+.sec,
+.ter {
+  padding: 0 0.9rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.stats div {
+  padding: 0.8rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--color-border-light);
+  background: var(--color-background-elevated-secondary);
+}
+
+.stats span {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.76rem;
+  color: var(--color-text-foreground-tertiary);
+}
+
+.preview-grid,
+.variant-grid,
+.field-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.preview-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.variant-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.preview-card,
+.variant-card {
+  padding: 1rem;
+}
+
+.variant-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.variant-head,
+.card-head,
+.head-actions,
+.chips,
+.button-row,
+.color-row,
+.range-row,
+.import-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.variant-head,
+.card-head {
+  justify-content: space-between;
+}
+
+.pill,
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.85rem;
+  padding: 0 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-light);
+  font-size: 0.78rem;
+}
+
+.pill {
+  background: var(--color-background-control);
+  color: var(--color-text-foreground-secondary);
+}
+
+.chips {
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: var(--color-background-elevated-secondary);
+}
+
+.chip.bg {
+  background: var(--color-background-surface);
+}
+
+.chip.panel {
+  background: var(--color-background-panel);
+}
+
+.chip.control {
+  background: var(--color-background-control);
+}
+
+.chip.accent {
+  color: var(--color-text-accent);
+  background: var(--color-background-accent);
+}
+
+.button-row {
+  flex-wrap: wrap;
+}
+
+.pri {
+  color: var(--color-text-button-primary);
+  background: var(--color-background-button-primary);
+}
+
+.sec {
+  color: var(--color-text-button-secondary);
+  background: var(--color-background-button-secondary);
+}
+
+.ter {
+  color: var(--color-text-button-tertiary);
+  background: var(--color-background-button-tertiary);
+}
+
+.term {
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border-light);
+  background: var(--vscode-terminal-background);
+  color: var(--vscode-terminal-foreground);
+  font-family: var(--font-code);
+  line-height: 1.6;
+}
+
+.k {
+  color: var(--syntax-keyword);
+}
+
+.f {
+  color: var(--syntax-function);
+}
+
+.v {
+  color: var(--syntax-primitive);
+}
+
+.t {
+  color: var(--syntax-type);
+}
+
+.s {
+  color: var(--syntax-string);
+}
+
+.a {
+  color: var(--color-text-accent);
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.label {
+  font-size: 0.82rem;
+}
+
+.select,
+.text {
+  width: 100%;
+  padding: 0 0.85rem;
+  background: var(--color-background-control);
+  color: var(--color-text-foreground);
+  box-shadow: var(--shadow-elev-1);
+}
+
+.picker {
+  width: 2.8rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.8rem;
+  background: var(--color-background-control);
+}
+
+.color-row .text,
+.import-row .text {
+  flex: 1;
+}
+
+.range-row {
+  gap: 1rem;
+}
+
+.range {
+  flex: 1;
+  accent-color: var(--color-text-accent);
+}
+
+.range-value {
+  min-width: 2.5rem;
+  text-align: right;
+  color: var(--color-text-foreground);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border-light);
+  background: var(--color-background-elevated-secondary);
+}
+
+.toggle span {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.toggle input {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .preview-grid,
+  .variant-grid,
+  .field-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

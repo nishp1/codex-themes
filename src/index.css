@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-code), ui-monospace, monospace;
+
+  --color-app-bg: var(--color-token-bg-primary);
+  --color-app-bg-secondary: var(--color-token-bg-secondary);
+  --color-app-bg-tertiary: var(--color-token-bg-tertiary);
+  --color-app-panel: var(--color-token-dropdown-background);
+  --color-app-panel-strong: var(--color-token-menu-background);
+  --color-app-control: var(--color-token-input-background);
+  --color-app-editor: var(--color-token-editor-background);
+  --color-app-fg: var(--color-token-text-primary);
+  --color-app-muted: var(--color-token-text-secondary);
+  --color-app-soft: var(--color-token-text-tertiary);
+  --color-app-border: var(--color-token-border);
+  --color-app-border-soft: var(--color-token-border-light);
+  --color-app-accent: var(--color-token-focus-border);
+  --color-app-accent-soft: var(--color-background-accent);
+  --color-app-skill: var(--color-accent-purple);
+  --color-app-added: var(--color-token-git-decoration-added-resource-foreground);
+  --color-app-added-soft: var(--color-editor-added);
+  --color-app-removed: var(--color-token-git-decoration-deleted-resource-foreground);
+  --color-app-removed-soft: var(--color-editor-deleted);
+
+  --shadow-app-1: var(--shadow-elev-1);
+  --shadow-app-2: var(--shadow-elev-2);
+  --shadow-app-3: var(--shadow-elev-3);
+}
+
+:root {
+  font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  color: var(--color-token-text-primary);
+  background: var(--color-token-bg-primary);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-token-bg-primary);
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+code {
+  font-family: var(--font-code), ui-monospace, monospace;
+}
+
+a {
+  color: inherit;
+}
